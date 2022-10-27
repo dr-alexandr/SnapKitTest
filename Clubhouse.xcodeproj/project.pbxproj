@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EADA0D145E3FF7A8891BF19 /* Pods_Clubhouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CCC62DE8168395601C296B /* Pods_Clubhouse.framework */; };
 		E2D6DCBE290AA25A00784512 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6DCBD290AA25A00784512 /* AppDelegate.swift */; };
 		E2D6DCC0290AA25A00784512 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6DCBF290AA25A00784512 /* SceneDelegate.swift */; };
 		E2D6DCC2290AA25A00784512 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6DCC1290AA25A00784512 /* ViewController.swift */; };
 		E2D6DCC5290AA25A00784512 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D6DCC3290AA25A00784512 /* Main.storyboard */; };
 		E2D6DCC7290AA25E00784512 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D6DCC6290AA25E00784512 /* Assets.xcassets */; };
 		E2D6DCCA290AA25E00784512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D6DCC8290AA25E00784512 /* LaunchScreen.storyboard */; };
+		E2D6DCD6290AC2BF00784512 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D6DCD5290AC2BF00784512 /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35BAC1CBEC12087C7A85FDFF /* Pods-Clubhouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clubhouse.debug.xcconfig"; path = "Target Support Files/Pods-Clubhouse/Pods-Clubhouse.debug.xcconfig"; sourceTree = "<group>"; };
+		35CCC62DE8168395601C296B /* Pods_Clubhouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clubhouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D6DCBA290AA25A00784512 /* Clubhouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clubhouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D6DCBD290AA25A00784512 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D6DCBF290AA25A00784512 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		E2D6DCC6290AA25E00784512 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D6DCC9290AA25E00784512 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2D6DCCB290AA25E00784512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D6DCD5290AC2BF00784512 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		F44A1C5B6EC7854FA3B7BC4C /* Pods-Clubhouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clubhouse.release.xcconfig"; path = "Target Support Files/Pods-Clubhouse/Pods-Clubhouse.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EADA0D145E3FF7A8891BF19 /* Pods_Clubhouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710549A05434C203D938AA5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35CCC62DE8168395601C296B /* Pods_Clubhouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A320147AB21BE59EC69B3F47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35BAC1CBEC12087C7A85FDFF /* Pods-Clubhouse.debug.xcconfig */,
+				F44A1C5B6EC7854FA3B7BC4C /* Pods-Clubhouse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E2D6DCB1290AA25A00784512 = {
 			isa = PBXGroup;
 			children = (
 				E2D6DCBC290AA25A00784512 /* Clubhouse */,
 				E2D6DCBB290AA25A00784512 /* Products */,
+				A320147AB21BE59EC69B3F47 /* Pods */,
+				710549A05434C203D938AA5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				E2D6DCC6290AA25E00784512 /* Assets.xcassets */,
 				E2D6DCC8290AA25E00784512 /* LaunchScreen.storyboard */,
 				E2D6DCCB290AA25E00784512 /* Info.plist */,
+				E2D6DCD5290AC2BF00784512 /* SecondVC.swift */,
 			);
 			path = Clubhouse;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2D6DCCE290AA25E00784512 /* Build configuration list for PBXNativeTarget "Clubhouse" */;
 			buildPhases = (
+				7774522EF5023D5F3F9D64B9 /* [CP] Check Pods Manifest.lock */,
 				E2D6DCB6290AA25A00784512 /* Sources */,
 				E2D6DCB7290AA25A00784512 /* Frameworks */,
 				E2D6DCB8290AA25A00784512 /* Resources */,
+				C006F21004A98F12A94C0B15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7774522EF5023D5F3F9D64B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clubhouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C006F21004A98F12A94C0B15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clubhouse/Pods-Clubhouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Clubhouse/Pods-Clubhouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Clubhouse/Pods-Clubhouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2D6DCB6290AA25A00784512 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +210,7 @@
 			files = (
 				E2D6DCC2290AA25A00784512 /* ViewController.swift in Sources */,
 				E2D6DCBE290AA25A00784512 /* AppDelegate.swift in Sources */,
+				E2D6DCD6290AC2BF00784512 /* SecondVC.swift in Sources */,
 				E2D6DCC0290AA25A00784512 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +355,7 @@
 		};
 		E2D6DCCF290AA25E00784512 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35BAC1CBEC12087C7A85FDFF /* Pods-Clubhouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		E2D6DCD0290AA25E00784512 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F44A1C5B6EC7854FA3B7BC4C /* Pods-Clubhouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
